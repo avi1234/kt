@@ -1,0 +1,10 @@
+%div{"ng-controller"=>"TicksCtrl"}
+	Search: 
+	%input.span3.search-query{"ng-model"=>"query", type:"text"}
+	Sort by:
+	%select.span2{"ng-model"=>"orderProp"}
+		%option{value:"comment"} Comment
+		%option{value:"user.name"} User name
+	%ul.nav.nav-tabs.nav-stacked
+		%li{"ng-repeat"=>"tick in ticks | filter:query | orderBy:orderProp"}
+			%a{href:"#/specific/{{tick.id}}"} {{tick.comment}} ({{tick.user.name}})

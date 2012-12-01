@@ -15,9 +15,9 @@ ActiveRecord::Schema.define(:version => 20121127100305) do
 
   create_table "places", :force => true do |t|
     t.string   "name"
-    t.string   "lo"
-    t.string   "la"
-    t.string   "avg_stars"
+    t.decimal  "lo"
+    t.decimal  "la"
+    t.decimal  "avg_stars"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

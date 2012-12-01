@@ -1,0 +1,4 @@
+
+(sublime_text:3603): Gtk-WARNING **: Attempting to store changes into `/root/.local/share/recently-used.xbel', but failed: Failed to create file '/root/.local/share/recently-used.xbel.WO79NW': No such file or directory
+
+(sublime_text:3603): Gtk-WARNING **: Attempting to set the permissions of `/root/.local/share/recently-used.xbel', but failed: No such file or directory
